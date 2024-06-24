@@ -21,6 +21,16 @@ body{
   align-items: center;
 }
 
+h2.titulo{
+    color: #ffff;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: aqua;
+}
+
 /* ESTILO DO CABEÇALHO */
 
 header{
@@ -71,8 +81,7 @@ header .btn-contato button:hover{
 /*TEXTO PRINCIPAL*/
 
 .texto{
-  padding: 40px 19%;
-  
+  padding: 40px 7%;
 }
 
 .txt-normal{
@@ -86,12 +95,13 @@ section.topo-do-site{
   padding: 10px 4%;
 }
 
+
 /*TEXTO ANIMADO*/
 
 .txt-animado{
-  font-size: 60px;
-  font-weight: 600;
-  color: white;
+  font-size: 70px;
+  font-weight: 800;
+  color: aqua;
   border-right: 5px solid #00f7ff;
   white-space: nowrap;
 
@@ -113,4 +123,39 @@ section.topo-do-site{
   0%{
     width: 0;
   }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+
+section.especialidades {
+  padding: 40px 4%;
+}  
+
+section.especialidades .flex{
+  gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #ffff;
+    padding: 40px;
+   
+    margin-top: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.363);
+}
+
+.especialidades .especialidades-box i {
+  font-size: 70px;
+  color: #00f7ff;
+  
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 20px 0;
 }
