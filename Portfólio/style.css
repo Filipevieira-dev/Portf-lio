@@ -1,0 +1,116 @@
+/* ESTILO GERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #000000;
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+  padding: 40px 4%;
+}
+
+header > .interface{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a{
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover{
+  color: aqua;
+  transform: scale(1.10);
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: aqua;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+header .btn-contato button:hover{
+  box-shadow: 0px 0px 8px rgb(2, 148, 173);
+}
+
+/*TEXTO PRINCIPAL*/
+
+.texto{
+  padding: 40px 19%;
+  
+}
+
+.txt-normal{
+  color: white;
+  font-size: 25px;
+}
+
+/*ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+  padding: 10px 4%;
+}
+
+/*TEXTO ANIMADO*/
+
+.txt-animado{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  border-right: 5px solid #00f7ff;
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  width: 11ch;
+  
+  animation: mark .5s step-end infinite, write 3s steps(250, end) ;
+}
+
+
+@keyframes mark{
+  50%{
+    border-right-color: transparent;
+  }
+}
+
+@keyframes write{
+  0%{
+    width: 0;
+  }
+}
